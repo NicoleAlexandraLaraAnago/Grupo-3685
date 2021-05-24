@@ -1,9 +1,9 @@
 /*Universidad de las Fuerzas Armadas ESPE
-Tpitulo: Sobrecargas de funciones 
+Titulo: Sobrecargas de funciones 
 Autor/es: Shirley Otuna
-Fecha de creación: 22/05/2021
-Fecha de modificación:23/05/2021
-Ingeniería de Software
+Fecha de creaciÃ³n: 22/05/2021
+Fecha de modificaciÃ³n:23/05/2021
+IngenierÃ­a de Software
 Estructura de Datos*/
 
 #include <iostream>
