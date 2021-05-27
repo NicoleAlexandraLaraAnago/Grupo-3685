@@ -56,3 +56,18 @@ double Calculo::calcularRaizCuadrada(int ingreso){
 	
 	return resultado;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
