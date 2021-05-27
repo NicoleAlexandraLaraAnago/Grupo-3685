@@ -8,6 +8,8 @@ Estructura de Datos*/
 
 #include <iostream>
 #include "Dividir.h"
+
+
 using namespace std;
 
 int main(int arg, char** argv){
@@ -21,4 +23,6 @@ int main(int arg, char** argv){
 	cout<<"El resultado de la division es: "<<Calcular(_num1,_num2)<<endl;
 	system("PAUSE()");
 	return 0;
+	
+	
 }

@@ -17,6 +17,8 @@ class division{
 	private:
 		double calcular; 
 		
+
+		
 };
 float Calcular(double num1,double num2);
 
