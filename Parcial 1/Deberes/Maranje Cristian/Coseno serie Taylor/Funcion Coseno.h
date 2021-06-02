@@ -6,27 +6,27 @@ using namespace std;
 Tpitulo: Clases en C++
 Autor/es:Cristian Maranje
 Fecha de creacion: 27/05/2021
-Fecha de modificacion:
+Fecha de modificacion:1/06/2021
 Ingenieria de Software
 Estructura de Datos*/
 
 
 template <class T>
-float Coseno (float angulo);
+double Coseno (double angulo);
 
-int factorial (int num);
+double factorial (double num);
 
 
-float Coseno (float angulo,int terninos){
+double Coseno (double angulo){
 	double coseno=0;
-	for (int k=0; k < terninos; k++){
+	for (int k=0; k < 30; k++){
 		coseno = coseno + pow(-1,k)*pow(angulo,2*k)/factorial(2*k);
 	}
 	return coseno;
 }
 
-int factorial (int num){
-	int f = 1;
+double factorial (double num){
+	double f = 1;
 	for(int i=1; i<= num ;i++){
 		f=f*i;
 	}

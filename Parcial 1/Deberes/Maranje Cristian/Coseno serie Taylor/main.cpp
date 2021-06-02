@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Funcion Coseno.h"
+#define PI 3.14159265
 
 using namespace std;
 
@@ -7,7 +8,7 @@ using namespace std;
 Tpitulo: Clases en C++
 Autor/es:Cristian Maranje
 Fecha de creacion: 27/05/2021
-Fecha de modificacion:
+Fecha de modificacion:1/06/2021
 Ingenieria de Software
 Estructura de Datos*/
 
@@ -15,12 +16,13 @@ Estructura de Datos*/
 
 
 int main() {
-	float angulo=0;
+	double angulo=0,anguloRadianes=0;
 	int terninos;
 	cout<<"-----------Calculo de coseno con la aproximacion de Taylor-------------"<<endl;
 	cout<<"Ingrese el angulo para calcular el coseno: "; cin>>angulo;
-	cout<<"Ingrese el numero de terminos: "; cin>>terninos;
 	
-	cout<<"El cos("<<angulo<<") es: "<<Coseno(angulo,terninos)<<endl;
+	anguloRadianes = angulo*PI/180;
+	
+	cout<<"El cos("<<angulo<<") es: "<<Coseno(anguloRadianes)<<endl;
 	return 0;
 }
