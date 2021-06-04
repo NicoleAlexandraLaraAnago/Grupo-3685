@@ -1,1 +1,0 @@
-# Talleres del Parcial 1
