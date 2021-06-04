@@ -1,10 +1,10 @@
 /*Universidad de las Fuerzas Armadas ESPE
-Título: Plantillas
+TÃ­tulo: Plantillas
 #Grupo
-Autor/es: Kevin Condor, Nicole Lara, Cristian Maranje, Stalin Rivera, Shirley otuna
-Fecha de creacíon: 19/05/2021
-Fecha de modificación: 19/05/2021
-Ingeniería en Software
+Autor/es: Kevin Condor, Nicole Lara, Cristian Maranje, Stalin Rivera, Shirley Otuna
+Fecha de creacÃ­on: 19/05/2021
+Fecha de modificaciÃ³n: 19/05/2021
+IngenierÃ­a en Software
 Estructura de Datos*/
 
 #include<iostream>
@@ -43,7 +43,7 @@ template <class TipoDato>
 TipoDato Resta<TipoDato>::Restar(){
 	return n3-n4;
 }
-//Multiplicación
+//MultiplicaciÃ³n
 template <class TipoDato>
 class Multiplicacion{
 	TipoDato n5,n6;
