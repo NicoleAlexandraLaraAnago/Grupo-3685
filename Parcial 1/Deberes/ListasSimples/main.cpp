@@ -1,16 +1,16 @@
 #include <iostream>
-#include "Lista.h"
+#include "ListaSimple.h"
 
 /*
 UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE							   
-Titulo: Lista
+Titulo: Listas simples 
 Autor: Cristian maranje											       
 Fecha: 08/06/2021													   
-Fecha de modificacion: 10/06/2021								   
+Fecha de modificacion: 16/06/2021								   
 */
 
-int main(){
-    Lista lst;
+int main() {
+    ListaSimple lst;
     lst.insertar(12);
     lst.insertar(2);
     lst.insertar(35);
@@ -18,6 +18,7 @@ int main(){
     lst.insertar(55);
     lst.insertar(6);
     lst.insertar(77);
+    lst.insertarEn(1,99);
 
     lst.mostrar();
     return 0;
