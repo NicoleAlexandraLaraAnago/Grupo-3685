@@ -1,1 +1,0 @@
-# Examen del Parcial 1

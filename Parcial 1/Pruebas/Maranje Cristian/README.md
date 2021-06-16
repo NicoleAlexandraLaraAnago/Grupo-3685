@@ -1,1 +1,0 @@
-# Pruebas del Parcial 1
