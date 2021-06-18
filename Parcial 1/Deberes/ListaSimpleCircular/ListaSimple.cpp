@@ -1,5 +1,5 @@
 /*Universidad de las Fuerzas Armadas ESPE
-Título: Plantillas
+Título: Lista Simple Circular
 #Grupo
 Autor/es: Kevin Condor, Nicole Lara, Cristian Maranje, Stalin Rivera, Shirley Otuna
 Fecha de creacíon: 16/06/2021
