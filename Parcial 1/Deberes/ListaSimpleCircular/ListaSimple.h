@@ -1,13 +1,14 @@
+/*Universidad de las Fuerzas Armadas ESPE
+Título: Lista Simple Circular
+#Grupo
+Autor/es: Kevin Condor, Nicole Lara, Cristian Maranje, Stalin Rivera, Shirley Otuna
+Fecha de creacíon: 16/06/2021
+Fecha de modificación: 17/06/2021
+Ingeniería en Software
+Estructura de Datos*/
+
 #include <iostream>
 #include "Nodo.h"
-
-/*
-UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE							   
-Titulo: Listas simples 
-Autor: Cristian maranje											       
-Fecha: 08/06/2021													   
-Fecha de modificacion: 16/06/2021								   
-*/
 
 //Posibles operaciones: insertar(inserta al ultimo), insertar en una posicion, eliminar (indice del item), mostrar.
 
