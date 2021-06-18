@@ -1,0 +1,37 @@
+# Project: Lista
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = ../8-ListasDobles/Nodo.o ../8-ListasDobles/IngresoDatos.o ../8-ListasDobles/Aplicativo.o ../8-ListasDobles/Lista.o
+LINKOBJ  = ../8-ListasDobles/Nodo.o ../8-ListasDobles/IngresoDatos.o ../8-ListasDobles/Aplicativo.o ../8-ListasDobles/Lista.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Lista.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+../8-ListasDobles/Nodo.o: ../8-ListasDobles/Nodo.cpp
+	$(CPP) -c ../8-ListasDobles/Nodo.cpp -o ../8-ListasDobles/Nodo.o $(CXXFLAGS)
+
+../8-ListasDobles/IngresoDatos.o: ../8-ListasDobles/IngresoDatos.cpp
+	$(CPP) -c ../8-ListasDobles/IngresoDatos.cpp -o ../8-ListasDobles/IngresoDatos.o $(CXXFLAGS)
+
+../8-ListasDobles/Aplicativo.o: ../8-ListasDobles/Aplicativo.cpp
+	$(CPP) -c ../8-ListasDobles/Aplicativo.cpp -o ../8-ListasDobles/Aplicativo.o $(CXXFLAGS)
+
+../8-ListasDobles/Lista.o: ../8-ListasDobles/Lista.cpp
+	$(CPP) -c ../8-ListasDobles/Lista.cpp -o ../8-ListasDobles/Lista.o $(CXXFLAGS)
