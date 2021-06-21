@@ -34,6 +34,7 @@ void ListaSimple::mostrar()
 }
 
 void ListaSimple::mostrarRecursivo(Nodo *valor,int indice){
+    valor = obtenerNodo(indice);
     std::cout << "Indice: " << indice++ << " Valor: " << valor->getValor() << std::endl;
     if(indice< dimLista)
         mostrarRecursivo(valor->getSiguiente(),indice++);
