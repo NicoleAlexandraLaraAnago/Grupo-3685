@@ -4,6 +4,7 @@
 #include <string.h>
 #include "Persona.h"
 #include"Menu.h"
+#include "Fecha.h"
 
 int main(){
 	

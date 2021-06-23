@@ -1,6 +1,7 @@
 #include "Persona.h"
 #include "Validaciones.h"
-
+#include "Fecha.h"
+#include "Menu.h"
 Persona :: Persona(string _nombre, string _apellido, long int _CI, 
 int _edad, string _localizacion, long int _telefono, float _sueldo, 
 string _correo, string _fecha){
@@ -28,18 +29,28 @@ Persona::Persona(){
 }
 
 Persona Persona::nuevaPersona(){
+	int opcion;
+	Fecha F1;
+	F1._edad();
     string _nombre,_apellido,_localizacion;
     long int _CI,_telefono;
     int _edad;
     float _sueldo;
     cout<<"PERSONA"<<endl;
-    cout<<"Digite su nombre: ";cin>> _nombre;
+    cout<<"Digite sus nombres: ";cin>> _nombre;
     cout<<"Digite su apellido: ";cin>> _apellido;
     cout<<"Numero de cedula: "; cin>>_CI;
     _CI = validarCedula(_CI);
-    cout<<"Digite su edad: "; cin>>_edad;
+    cout<<"Digite su edad: "<<endl;
+    Menu menu;
+        do{
+        	Fecha F1;
+        	F1._edad();
+    	
+	}while (opcion != 3 );
     cout<<"Digite su lugar de localizacion: "; cin>>_localizacion;
     cout<<"Numero telefonico: "; cin>>_telefono;
+
     cout<<"Digite su sueldo: "; cin>>_sueldo;
     Persona tmp(_nombre,_apellido,_CI,_edad,_localizacion,_telefono,_sueldo,"no definido","no definido");
     return tmp;
