@@ -1,115 +1,109 @@
 #include "Persona.h"
-Persona :: Persona(string _nombre, string _apellido, long _CI, 
-int _edad, string _localizacion, long _telefono, float _sueldo, 
+#include "Validaciones.h"
+
+Persona :: Persona(string _nombre, string _apellido, long int _CI, 
+int _edad, string _localizacion, long int _telefono, float _sueldo, 
 string _correo, string _fecha){
-    _nombre = nombre;
-    _apellido = apellido;
-    _CI = CI;
-    _edad = edad;
-    _localizacion = localizacion;
-    _telefono = telefono;
-    _sueldo = sueldo;
-    _correo = correo;
-    _fecha = fecha;
+    this->nombre = _nombre;
+    this->apellido = _apellido;
+    this->CI = _CI;
+    this->edad = _edad;
+    this->localizacion = _localizacion;
+    this->telefono = _telefono;
+    this->sueldo = _sueldo;
+    this->correo = _correo;
+    this->fecha = _fecha;
 }
+
+Persona::Persona(){
+    this->nombre = "usuario";
+    this->apellido = "usuario";
+    this->CI = 99999;
+    this->edad = 0;
+    this->localizacion = "no definido";
+    this->telefono = 99999;
+    this->sueldo = 99999;
+    this->correo = "no definido";
+    this->fecha ="no definido";
+}
+
+Persona Persona::nuevaPersona(){
+    string _nombre,_apellido,_localizacion;
+    long int _CI,_telefono;
+    int _edad;
+    float _sueldo;
+    cout<<"PERSONA"<<endl;
+    cout<<"Digite su nombre: ";cin>> _nombre;
+    cout<<"Digite su apellido: ";cin>> _apellido;
+    cout<<"Numero de cedula: "; cin>>_CI;
+    _CI = validarCedula(_CI);
+    cout<<"Digite su edad: "; cin>>_edad;
+    cout<<"Digite su lugar de localizacion: "; cin>>_localizacion;
+    cout<<"Numero telefonico: "; cin>>_telefono;
+    cout<<"Digite su sueldo: "; cin>>_sueldo;
+    Persona tmp(_nombre,_apellido,_CI,_edad,_localizacion,_telefono,_sueldo,"no definido","no definido");
+    return tmp;
+}
+
+
 /*-----------------setters-----------------*/
 
-void Persona :: SetNombre(string _nombre){
+void Persona :: setNombre(string _nombre){
     nombre = _nombre;
 }
-void Persona :: SetApellido(string _apellido){
+void Persona :: setApellido(string _apellido){
     apellido = _apellido;
 }
-void Persona :: SetCI(long _CI){
+void Persona :: setCI(long _CI){
     CI = _CI;
 }
-void Persona :: SetEdad(int _edad){
+void Persona :: setEdad(int _edad){
     edad = _edad;
 }
-void Persona :: SetLocalizacion(string _localizacion){
+void Persona :: setLocalizacion(string _localizacion){
     localizacion = _localizacion;
 }
-void Persona :: SetTelefono(long _telefono){
+void Persona :: setTelefono(long _telefono){
     telefono = _telefono;
 }
-void Persona :: SetSueldo(float _sueldo){
+void Persona :: setSueldo(float _sueldo){
     sueldo = _sueldo;
 }
-void Persona :: SetCorreo(string _correo){
+void Persona :: setCorreo(string _correo){
     correo = _correo;
 }
 
-//void Persona :: SetFecha(string _fecha){
- //   fecha = _fecha;
-//}
+void Persona :: setFecha(string _fecha){
+   fecha = _fecha;
+}
 
 /*-----------------getters------------------*/
 
-string Persona :: GetNombre(){
+string Persona :: getNombre(){
     return nombre;
 }
-string Persona :: GetApellido(){
+string Persona :: getApellido(){
     return apellido;
 }
-long Persona :: GetCI(){
+long Persona :: getCI(){
     return CI;
 }
-int Persona :: GetEdad(){
+int Persona :: getEdad(){
     return edad;
 }
-string Persona :: GetLocalizacion(){
+string Persona :: getLocalizacion(){
     return localizacion;
 }
-long Persona :: GetTelefono(){
+long Persona :: getTelefono(){
     return telefono;
 }
-float Persona :: GetSueldo(){
+float Persona :: getSueldo(){
     return sueldo;
 }
-string Persona :: GetCorreo(){
+string Persona :: getCorreo(){
     return correo;
 }
-string Persona :: GetFecha(){
+string Persona :: getFecha(){
     return fecha;
 }
-/*
-std::string Persona::getNombre(void)
-{
-   return nombre;
-}
-
-void Persona::setNombre(std::string newNombre)
-{
-   nombre = newNombre;
-}
-
-std::string Persona::getApellido(void)
-{
-   return apellido;
-}
-
-void Persona::setApellido(std::string newApellido)
-{
-   apellido = newApellido;
-}
-
-std::string Persona::getCedula(void)
-{
-   return cedula;
-}
-
-void Persona::setCedula(std::string newCedula)
-{
-   cedula = newCedula;
-}
-
-std::string Persona::getCorreo(void)
-{
-   return correo;
-}
-
-void Persona::setCorreo(std::string newCorreo)
-{
-   correo = newCorreo;
-}*/
 
