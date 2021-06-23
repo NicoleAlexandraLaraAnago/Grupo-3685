@@ -3,27 +3,39 @@
 #include <stdio.h>
 #include <string.h>
 #include "Persona.h"
-
-using namespace std;
-
+#include"Menu.h"
 
 int main(){
+	
 	string nombre;
 	string apellido;
-	string correo;
     long CI;
     int edad;
     string localizacion;
     long telefono;
     float sueldo;
-    string fecha;
-
-    cout<<"PERSONA"<<endl;
+	string dato;
+	int numero;
+	string correo;
+	string fecha;
+	Persona persona1(nombre, apellido, CI, edad, 
+	localizacion, telefono, sueldo,correo,fecha);
+	Menu menu;
+	int opcion;
+	do{
+		opcion = menu.menu();
+		switch(opcion){
+			case 0:
+			//	do{
+					system("cls");
+					//cout << "Introduzca un dato: ";
+					//cin >> dato;
+					//numero = atoi(dato.c_str());
+			//	}while(menu.repetir() != 1);
+				do{
+					cout<<"PERSONA"<<endl;
     cout<<"Digite su nombre: ";
     cin>> nombre;
-    
-    cout<<"Digite su apellido: ";
-    cin>> apellido;
 
     cout<<"Numero de cedula: ";
     cin>>CI;
@@ -31,25 +43,39 @@ int main(){
     cout<<"Digite su edad: ";
     cin>>edad;
 
-    cout<<"Digite su lugar de direccion: ";
+    cout<<"Digite su lugar de localizacion: ";
     cin>>localizacion;
 
     cout<<"Numero telefonico: ";
     cin>>telefono;
 
-    cout<<"Digite su sueldo o monto que recibe: ";
+    cout<<"Digite su sueldo: ";
     cin>>sueldo;
-    
-    cout<<"Digite su correo: ";
-    cin>>correo;
-    cout<<"Digite la fecha de pago: ";
-    cin>>fecha;
-    
-    /*creando objeto*/
-    Persona persona1(nombre, apellido, CI, edad, 
-	localizacion, telefono, sueldo,correo,fecha);
+    numero = atoi(dato.c_str());
+					
+				}while(menu.repetir() != 1);				
+				break;	
+			case 1:
+				do{	
+					system("cls");	
+					cout << "Introduzca la cedula: ";
+					cin >> dato;
+					numero = atoi(dato.c_str());
+				}while(menu.repetir() != 1);
+				//cola
+				break;
+			case 2:				
+					system("cls");
+					system("pause");					
+				break;
+			default:
+				cout << "Saliendo.....";
+				break;			
+		}
+	}while(opcion != 3);	
+	//crea el Objeto 
 
-    persona1.SetNombre(nombre);
+	persona1.SetNombre(nombre);
     persona1.SetNombre(apellido);
     persona1.SetNombre(correo);
     persona1.SetCI(CI);
@@ -57,7 +83,6 @@ int main(){
     persona1.SetLocalizacion(localizacion);
     persona1.SetTelefono(telefono);
     persona1.SetSueldo(sueldo);
-
     cout<<"\n\n";
     cout<<"DATOS PERSONALES\n";
     cout<<"Nombre: "<< persona1.GetNombre()<<endl;
@@ -71,5 +96,5 @@ int main(){
     cout<<"Fecha de pago: "<<persona1.GetFecha();
 	
 	system("pause");
-	return 0;	
+	return 0;
 }

@@ -39,9 +39,9 @@ void Persona :: SetCorreo(string _correo){
     correo = _correo;
 }
 
-void Persona :: SetFecha(string _fecha){
-    fecha = _fecha;
-}
+//void Persona :: SetFecha(string _fecha){
+ //   fecha = _fecha;
+//}
 
 /*-----------------getters------------------*/
 
@@ -112,3 +112,4 @@ void Persona::setCorreo(std::string newCorreo)
 {
    correo = newCorreo;
 }*/
+

@@ -27,7 +27,7 @@ private:
 
 class Persona{
     
-    private:
+    public:
         string nombre;
         string apellido;
         long CI;
@@ -65,3 +65,4 @@ class Persona{
 
         
 };
+
