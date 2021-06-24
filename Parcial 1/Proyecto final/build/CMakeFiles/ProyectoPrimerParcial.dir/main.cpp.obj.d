@@ -1,5 +1,5 @@
 CMakeFiles/ProyectoPrimerParcial.dir/main.cpp.obj: \
- D:\u\progra\Estructura_de_Datos\github\Proyectos\Parcial\ 1\Proyecto\ final\main.cpp \
+ D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\main.cpp \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -128,8 +128,9 @@ CMakeFiles/ProyectoPrimerParcial.dir/main.cpp.obj: \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- D:\u\progra\Estructura_de_Datos\github\Proyectos\Parcial\ 1\Proyecto\ final\Persona.h \
- D:\u\progra\Estructura_de_Datos\github\Proyectos\Parcial\ 1\Proyecto\ final\Menu.h \
+ D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Persona.h \
+ D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Fecha.h \
+ D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Menu.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/windows.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/excpt.h \

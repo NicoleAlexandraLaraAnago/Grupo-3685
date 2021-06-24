@@ -12,12 +12,12 @@ string generarCorreo(Persona persona,string indice){
 	
 	size_t posicion = 0;
 	
-	while((posicion = nombres.find(separador)) != string::npos){
-		token = nombres.substr(0,posicion);		
+	while((posicion = nombre.find(separador)) != string::npos){
+		token = nombre.substr(0,posicion);		
 		correo += token[0];
-		nombres.erase(0, posicion + separador.length());				
+		nombre.erase(0, posicion + separador.length());				
 	}
-	correo += nombres[0];	
+	correo += nombre[0];	
 	correo += persona.getApellido();
 	correo += indice ;
 	correo += "@espe.edu.ec";

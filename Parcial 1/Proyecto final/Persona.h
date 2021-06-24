@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Fecha.h"
 
 using namespace std;
 
@@ -8,15 +9,15 @@ class Persona{
         string nombre;
         string apellido;
         long int CI;
-        int edad;
+        Fecha edad;
         string localizacion;
-        long telefono;
+        long int telefono;
         float sueldo;
         string correo;
         string fecha;
 
     public:
-        Persona(string, string, long int, int, string, long int, float,string, string);
+        Persona(string _nombre, string _apellido, long int _CI, Fecha _edad, string _localizacion, long int _telefono, float _sueldo, string _correo, string _fecha);
         Persona();
         Persona nuevaPersona();
         
@@ -24,7 +25,6 @@ class Persona{
         void setNombre(string);
         void setApellido(string);
         void setCI(long);
-        void setEdad(int);
         void setLocalizacion(string);
         void setTelefono(long);
         void setSueldo(float);
@@ -34,7 +34,6 @@ class Persona{
         string getNombre();
         string getApellido();
         long getCI();
-        int getEdad();
         string getLocalizacion();
         long getTelefono();
         float getSueldo();

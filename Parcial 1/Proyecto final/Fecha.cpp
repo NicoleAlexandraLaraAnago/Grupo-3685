@@ -1,35 +1,68 @@
 #include <iostream>
 #include "Fecha.h"
+#include "Persona.h"
+#include <time.h>
 
 
 using namespace std;
+Fecha::Fecha(){
+	this->year = 0;
+	this->month = 0;
+	this->day = 0;
+}
 
+Fecha::Fecha(int day,int month,int year){
+	this->year=year;
+	this->month=month;
+	this->day=day;
+}
 
-void Fecha::_edad(){
+Fecha Fecha::ingresarFechaNacimiento(){
+	int year2, month2, day2;//fecha nacimiento
 	
-	int respDia , respMes;
-	int year2, month2, day2;
-	int year1, month1, day1;
-	
+	//ingreso y validacion del anio
 	cout << "Ingresar Anio de nacimiento (xxxx): " << endl;
 	cin >> year2;
 	while( year2 < 0 || year2 > 2021 ){
 		cout << "Dato no valido, volver a ingresar: " << endl;
 		cin >> year2;
 	}
+	year=year2;
+
+	//ingreso y validacion del mes
 	cout << "Ingresar Mes de nacimiento (xx): " << endl;
 	cin >> month2;
 	while( month2 < 1 || month2 > 12 ){
 		cout << "Dato no valido, volver a ingresar: " << endl;
 		cin >> month2;
 	}
+	month=month2;
+
+	//ingreso y validacion del dia
 	cout << "Ingresar Dia de nacimiento (xx): " << endl;
 	cin >> day2;
 	while( day2 < 1 || day2 > 30 ){
 		cout << "Dato no valido, volver a ingresar: " << endl;
 		cin >> day2;
 	}
+	day=day2;
+	Fecha tmp(day2,month2,year2);
+	return tmp;
+}
+
+int Fecha::_edad(){
 	
+//tiempo actual automatico aun falta de implementar
+	char currDate [30];
+	time_t t = time(NULL);
+	struct tm tm= *localtime(&t);
+	sprintf(currDate,"%d-%d-%d %d:%d:%d",tm.tm_year+1900,tm.tm_mon+1,tm.tm_mday,tm.tm_hour,tm.tm_min,tm.tm_sec);
+
+	int respDia , respMes;
+	int year2= year, month2= month, day2=day;//fecha nacimiento
+	int year1, month1, day1;//fecha actual
+
+	//ingreso del anio actual 
 	cout << "Ingresar Anio actual (xxxx): " << endl;
 	cin >> year1;
 	while( year1 < 0 || year1 > 2021 ){
@@ -37,6 +70,7 @@ void Fecha::_edad(){
 		cin >> year1;
 	}
 	
+	//ingreso del mes actual
 	cout << "Ingresar Mes actual (xx): " << endl;
 	cin >> month1;
 	while( month1 < 0 || month1 > 12 ){
@@ -44,14 +78,15 @@ void Fecha::_edad(){
 		cin >> month1;
 	}
 		
+	//Ingreso del dia actual
 	cout << "Ingresar Dia actual (xx): " << endl;
 	cin >> day1;
 	while( day1 < 0 || day1 > 30 ){
 		cout << "Dato no valido, volver a ingresar: " << endl;
 		cin >> day1;
 	}
-		
- 
+
+	
     if ( day1 < day2  )
     {   
         day1 = day1 + 30;
@@ -78,8 +113,28 @@ void Fecha::_edad(){
     cout << " Mese/s: " << respMes << endl;
     cout << " Dia/s: " << respDia << endl;
     
-    
+    return yearT;
 		
 }
 
+//---------------setters--------------
+void Fecha::setYear(int _year){
+	year=_year;
+}
+void Fecha::setDay(int _day){
+	day=_day;
+}
+void Fecha::setMonth(int _month){
+	month=_month;
+}
 
+//----------------getters-------------
+int Fecha::getDay(){
+	return day;
+}
+int Fecha::getMonth(){
+	return month;
+}
+int Fecha::getYear(){
+	return year;
+}

@@ -61,3 +61,21 @@ long int validarCedula(long int cedula){
     return cedula;
 }
     
+long int validarNumero(string mensaje){
+    long int dato;
+	do{
+		cout<<endl<<mensaje;
+		cin>>dato;
+		
+		if(cin.fail()==true){
+			cin.clear();
+			cin.ignore(1000,'\n');
+			cout<<endl<<"Tipo de dato incorrecto..."<<endl;
+			system("pause");
+			continue;
+		} else{
+			break;
+		}
+	}while(true);
+	return dato;
+}

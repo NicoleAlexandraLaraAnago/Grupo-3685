@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ProyectoPrimerParcial.dir/Fecha.cpp.obj"
+  "CMakeFiles/ProyectoPrimerParcial.dir/Fecha.cpp.obj.d"
   "CMakeFiles/ProyectoPrimerParcial.dir/Persona.cpp.obj"
   "CMakeFiles/ProyectoPrimerParcial.dir/Persona.cpp.obj.d"
   "CMakeFiles/ProyectoPrimerParcial.dir/main.cpp.obj"

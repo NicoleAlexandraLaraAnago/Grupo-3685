@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: D:/u/progra/Estructura_de_Datos/github/Proyectos/Parcial 1/Proyecto final
-BuildDirectory: D:/u/progra/Estructura_de_Datos/github/Proyectos/Parcial 1/Proyecto final/build
+SourceDirectory: D:/u/progra/Estructura_de_Datos/github/Grupo-3685/Parcial 1/Proyecto final
+BuildDirectory: D:/u/progra/Estructura_de_Datos/github/Grupo-3685/Parcial 1/Proyecto final/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/cmake-3.20.4-windows-i386/bin/cmake.exe" "D:/u/progra/Estructura_de_Datos/github/Proyectos/Parcial 1/Proyecto final"
+ConfigureCommand: "C:/Program Files/cmake-3.20.4-windows-i386/bin/cmake.exe" "D:/u/progra/Estructura_de_Datos/github/Grupo-3685/Parcial 1/Proyecto final"
 MakeCommand: C:/Program\ Files/cmake-3.20.4-windows-i386/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

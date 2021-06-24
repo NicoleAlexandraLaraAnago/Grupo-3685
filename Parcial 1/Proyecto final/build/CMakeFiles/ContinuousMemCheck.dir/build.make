@@ -52,10 +52,10 @@ RM = "C:\Program Files\cmake-3.20.4-windows-i386\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\u\progra\Estructura_de_Datos\github\Proyectos\Parcial 1\Proyecto final"
+CMAKE_SOURCE_DIR = "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\u\progra\Estructura_de_Datos\github\Proyectos\Parcial 1\Proyecto final\build"
+CMAKE_BINARY_DIR = "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build"
 
 # Utility rule file for ContinuousMemCheck.
 
@@ -81,6 +81,6 @@ CMakeFiles/ContinuousMemCheck.dir/clean:
 .PHONY : CMakeFiles/ContinuousMemCheck.dir/clean
 
 CMakeFiles/ContinuousMemCheck.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\u\progra\Estructura_de_Datos\github\Proyectos\Parcial 1\Proyecto final" "D:\u\progra\Estructura_de_Datos\github\Proyectos\Parcial 1\Proyecto final" "D:\u\progra\Estructura_de_Datos\github\Proyectos\Parcial 1\Proyecto final\build" "D:\u\progra\Estructura_de_Datos\github\Proyectos\Parcial 1\Proyecto final\build" "D:\u\progra\Estructura_de_Datos\github\Proyectos\Parcial 1\Proyecto final\build\CMakeFiles\ContinuousMemCheck.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final" "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final" "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build" "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build" "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build\CMakeFiles\ContinuousMemCheck.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousMemCheck.dir/depend
 

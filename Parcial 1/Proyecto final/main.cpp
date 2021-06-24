@@ -4,16 +4,12 @@
 #include <string.h>
 #include "Persona.h"
 #include"Menu.h"
-#include "Fecha.h"
 
 int main(){
 	
-	string nombre,apellido,localizacion,dato,correo,fecha;
-    long CI,telefono;
-    int edad,numero;
-    float sueldo;
-	Persona persona1(nombre, apellido, CI, edad, 
-	localizacion, telefono, sueldo,correo,fecha);
+	string dato;
+    int numero;
+	Persona persona1;
 	Menu menu;
 	int opcion;
 	do{
