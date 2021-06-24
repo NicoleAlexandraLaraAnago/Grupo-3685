@@ -1,5 +1,8 @@
-CMakeFiles/ProyectoPrimerParcial.dir/Persona.cpp.obj: \
- D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Persona.cpp \
+CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.obj: \
+ D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\ListaDobleEnlazada.cpp \
+ D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\ListaDobleEnlazada.h \
+ D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\nodo.h \
+ D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Persona.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -126,8 +129,13 @@ CMakeFiles/ProyectoPrimerParcial.dir/Persona.cpp.obj: \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
- D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Persona.h \
  D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Fecha.h \
- D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Validaciones.h \
- C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/refwrap.h \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h

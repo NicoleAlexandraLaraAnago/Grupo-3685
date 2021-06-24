@@ -110,11 +110,41 @@ CMakeFiles/ProyectoPrimerParcial.dir/Fecha.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProyectoPrimerParcial.dir/Fecha.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\Fecha.cpp" -o CMakeFiles\ProyectoPrimerParcial.dir\Fecha.cpp.s
 
+CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.obj: CMakeFiles/ProyectoPrimerParcial.dir/flags.make
+CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.obj: ../ListaDobleEnlazada.cpp
+CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.obj: CMakeFiles/ProyectoPrimerParcial.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.obj -MF CMakeFiles\ProyectoPrimerParcial.dir\ListaDobleEnlazada.cpp.obj.d -o CMakeFiles\ProyectoPrimerParcial.dir\ListaDobleEnlazada.cpp.obj -c "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\ListaDobleEnlazada.cpp"
+
+CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\ListaDobleEnlazada.cpp" > CMakeFiles\ProyectoPrimerParcial.dir\ListaDobleEnlazada.cpp.i
+
+CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\ListaDobleEnlazada.cpp" -o CMakeFiles\ProyectoPrimerParcial.dir\ListaDobleEnlazada.cpp.s
+
+CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj: CMakeFiles/ProyectoPrimerParcial.dir/flags.make
+CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj: ../nodo.cpp
+CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj: CMakeFiles/ProyectoPrimerParcial.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj -MF CMakeFiles\ProyectoPrimerParcial.dir\nodo.cpp.obj.d -o CMakeFiles\ProyectoPrimerParcial.dir\nodo.cpp.obj -c "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\nodo.cpp"
+
+CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\nodo.cpp" > CMakeFiles\ProyectoPrimerParcial.dir\nodo.cpp.i
+
+CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\nodo.cpp" -o CMakeFiles\ProyectoPrimerParcial.dir\nodo.cpp.s
+
 # Object files for target ProyectoPrimerParcial
 ProyectoPrimerParcial_OBJECTS = \
 "CMakeFiles/ProyectoPrimerParcial.dir/main.cpp.obj" \
 "CMakeFiles/ProyectoPrimerParcial.dir/Persona.cpp.obj" \
-"CMakeFiles/ProyectoPrimerParcial.dir/Fecha.cpp.obj"
+"CMakeFiles/ProyectoPrimerParcial.dir/Fecha.cpp.obj" \
+"CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.obj" \
+"CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj"
 
 # External object files for target ProyectoPrimerParcial
 ProyectoPrimerParcial_EXTERNAL_OBJECTS =
@@ -122,11 +152,13 @@ ProyectoPrimerParcial_EXTERNAL_OBJECTS =
 ProyectoPrimerParcial.exe: CMakeFiles/ProyectoPrimerParcial.dir/main.cpp.obj
 ProyectoPrimerParcial.exe: CMakeFiles/ProyectoPrimerParcial.dir/Persona.cpp.obj
 ProyectoPrimerParcial.exe: CMakeFiles/ProyectoPrimerParcial.dir/Fecha.cpp.obj
+ProyectoPrimerParcial.exe: CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.obj
+ProyectoPrimerParcial.exe: CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj
 ProyectoPrimerParcial.exe: CMakeFiles/ProyectoPrimerParcial.dir/build.make
 ProyectoPrimerParcial.exe: CMakeFiles/ProyectoPrimerParcial.dir/linklibs.rsp
 ProyectoPrimerParcial.exe: CMakeFiles/ProyectoPrimerParcial.dir/objects1.rsp
 ProyectoPrimerParcial.exe: CMakeFiles/ProyectoPrimerParcial.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ProyectoPrimerParcial.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ProyectoPrimerParcial.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ProyectoPrimerParcial.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

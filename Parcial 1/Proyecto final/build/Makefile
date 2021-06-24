@@ -546,6 +546,30 @@ Fecha.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/Fecha.cpp.s
 .PHONY : Fecha.cpp.s
 
+ListaDobleEnlazada.obj: ListaDobleEnlazada.cpp.obj
+.PHONY : ListaDobleEnlazada.obj
+
+# target to build an object file
+ListaDobleEnlazada.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.obj
+.PHONY : ListaDobleEnlazada.cpp.obj
+
+ListaDobleEnlazada.i: ListaDobleEnlazada.cpp.i
+.PHONY : ListaDobleEnlazada.i
+
+# target to preprocess a source file
+ListaDobleEnlazada.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.i
+.PHONY : ListaDobleEnlazada.cpp.i
+
+ListaDobleEnlazada.s: ListaDobleEnlazada.cpp.s
+.PHONY : ListaDobleEnlazada.s
+
+# target to generate assembly for a file
+ListaDobleEnlazada.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.s
+.PHONY : ListaDobleEnlazada.cpp.s
+
 Persona.obj: Persona.cpp.obj
 .PHONY : Persona.obj
 
@@ -594,6 +618,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+nodo.obj: nodo.cpp.obj
+.PHONY : nodo.obj
+
+# target to build an object file
+nodo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj
+.PHONY : nodo.cpp.obj
+
+nodo.i: nodo.cpp.i
+.PHONY : nodo.i
+
+# target to preprocess a source file
+nodo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.i
+.PHONY : nodo.cpp.i
+
+nodo.s: nodo.cpp.s
+.PHONY : nodo.s
+
+# target to generate assembly for a file
+nodo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.s
+.PHONY : nodo.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -637,12 +685,18 @@ help:
 	@echo ... Fecha.obj
 	@echo ... Fecha.i
 	@echo ... Fecha.s
+	@echo ... ListaDobleEnlazada.obj
+	@echo ... ListaDobleEnlazada.i
+	@echo ... ListaDobleEnlazada.s
 	@echo ... Persona.obj
 	@echo ... Persona.i
 	@echo ... Persona.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... nodo.obj
+	@echo ... nodo.i
+	@echo ... nodo.s
 .PHONY : help
 
 

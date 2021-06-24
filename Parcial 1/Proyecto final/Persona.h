@@ -9,7 +9,7 @@ class Persona{
         string nombre;
         string apellido;
         long int CI;
-        Fecha fechaNacimiento;
+        Fecha *fechaNacimiento;
         string localizacion;
         long int telefono;
         float sueldo;
@@ -17,10 +17,11 @@ class Persona{
         string fecha;
 
     public:
-        Persona(string _nombre, string _apellido, long int _CI, Fecha _edad, string _localizacion, long int _telefono, float _sueldo, string _correo, string _fecha);
+        Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, long int _telefono, float _sueldo, string _correo, string _fecha);
         Persona();
         Persona nuevaPersona();
-        
+        void generarCorreo(int);
+
         void setNombre(string);
         void setApellido(string);
         void setCI(long);
@@ -38,8 +39,6 @@ class Persona{
         float getSueldo();
         string getCorreo();
         string getFecha();
-        
-
-        
+        Fecha* getFechaNacimiento();
 };
 

@@ -836,12 +836,12 @@ CMakeFiles/ContinuousMemCheck.dir/clean:
 CMakeFiles/ProyectoPrimerParcial.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build\CMakeFiles" --progress-num=1,2,3,4 "Built target ProyectoPrimerParcial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build\CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target ProyectoPrimerParcial"
 .PHONY : CMakeFiles/ProyectoPrimerParcial.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ProyectoPrimerParcial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build\CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build\CMakeFiles" 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ProyectoPrimerParcial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial 1\Proyecto final\build\CMakeFiles" 0
 .PHONY : CMakeFiles/ProyectoPrimerParcial.dir/rule

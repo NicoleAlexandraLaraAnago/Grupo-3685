@@ -1,8 +1,9 @@
 #pragma once
+#include "Persona.h"
 
 class Nodo {
 public:
-    Nodo(int valor);
+    Nodo(Persona Persona);
 
     Nodo *get_siguiente();
     void set_siguiente(Nodo *nodo);
@@ -10,11 +11,11 @@ public:
     Nodo *get_anterior();
     void set_anterior(Nodo *nodo);
 
-    int get_valor();
-    void set_valor(int _valor);
+    Persona get_persona();
+    void set_persona(Persona persona);
 
 private:
-    int valor;
+    Persona persona;
     Nodo *siguiente = nullptr;
     Nodo *anterior = nullptr;
 };

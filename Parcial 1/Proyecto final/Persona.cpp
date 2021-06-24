@@ -1,10 +1,12 @@
+#include <iostream>
+#include <string>
 #include "Persona.h"
 #include "Validaciones.h"
 
 
 using namespace std;
 
-Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha _edad, string _localizacion, long int _telefono, float _sueldo, string _correo, string _fecha){
+Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, long int _telefono, float _sueldo, string _correo, string _fecha){
     this->nombre = _nombre;
     this->apellido = _apellido;
     this->CI = _CI;
@@ -27,23 +29,37 @@ Persona::Persona(){
 }
 
 Persona Persona::nuevaPersona(){
-    string _nombre,_apellido,_localizacion;
+    string _nombre,_apellido,_localizacion,_correo;
     long int _CI,_telefono;
     float _sueldo;
     cout<<"PERSONA"<<endl;
     cout<<"Digite sus nombres: ";cin>> _nombre;
+    nombre=_nombre;
     cout<<"Digite su apellido: ";cin>> _apellido;
+    apellido=_apellido;
     cout<<"Numero de cedula: "; cin>>_CI;
-    _CI = validarCedula(_CI);
+    //_CI = validarCedula(_CI);
     cout<<"Fecha de nacimiento.\n";
-    fechaNacimiento.ingresarFechaNacimiento();
+    fechaNacimiento = fechaNacimiento->ingresarFechaNacimiento();
     cout<<"Digite su lugar de localizacion: "; cin>>_localizacion;
     cout<<"Numero telefFonico: "; cin>>_telefono;
     cout<<"Digite su sueldo: "; cin>>_sueldo;
-    Persona tmp(_nombre,_apellido,_CI,fechaNacimiento,_localizacion,_telefono,_sueldo,"no definido","no definido");
+    generarCorreo(0);
+    Persona tmp(_nombre,_apellido,_CI,fechaNacimiento,_localizacion,_telefono,_sueldo,correo,"no definido");
     return tmp;
 }
 
+void Persona::generarCorreo(int cont){
+    string localNonbre = nombre;
+    string localApellido = apellido;
+    for (int i = 0; i < localNonbre.length(); i++) localNonbre[i] = tolower(localNonbre[i]);
+    for (int i = 0; i < localApellido.length(); i++) localApellido[i] = tolower(localApellido[i]);
+    if(cont==0){
+        correo=localNonbre[0]+localApellido+"@espe.edu.ec";
+    }else{
+        correo=localNonbre[0]+localApellido+to_string(cont)+"@espe.edu.ec";
+    }
+}
 
 /*-----------------setters-----------------*/
 
@@ -75,6 +91,9 @@ void Persona :: setFecha(string _fecha){
 }
 
 /*-----------------getters------------------*/
+Fecha* Persona::getFechaNacimiento(){
+    return fechaNacimiento;
+}
 
 string Persona :: getNombre(){
     return nombre;
