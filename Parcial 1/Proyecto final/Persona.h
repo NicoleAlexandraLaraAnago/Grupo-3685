@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Fecha.h"
-
+#pragma once
 using namespace std;
 
 class Persona{
@@ -9,7 +9,7 @@ class Persona{
         string nombre;
         string apellido;
         long int CI;
-        Fecha edad;
+        Fecha fechaNacimiento;
         string localizacion;
         long int telefono;
         float sueldo;
@@ -20,7 +20,6 @@ class Persona{
         Persona(string _nombre, string _apellido, long int _CI, Fecha _edad, string _localizacion, long int _telefono, float _sueldo, string _correo, string _fecha);
         Persona();
         Persona nuevaPersona();
-        
         
         void setNombre(string);
         void setApellido(string);

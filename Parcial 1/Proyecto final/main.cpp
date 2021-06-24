@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "Persona.h"
-#include"Menu.h"
+#include "Menu.h"
 
 int main(){
 	

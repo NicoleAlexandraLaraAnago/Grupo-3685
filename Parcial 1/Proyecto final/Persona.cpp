@@ -8,7 +8,7 @@ Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha _edad, st
     this->nombre = _nombre;
     this->apellido = _apellido;
     this->CI = _CI;
-    this->edad = _edad;
+    this->fechaNacimiento = _edad;
     this->localizacion = _localizacion;
     this->telefono = _telefono;
     this->sueldo = _sueldo;
@@ -35,13 +35,12 @@ Persona Persona::nuevaPersona(){
     cout<<"Digite su apellido: ";cin>> _apellido;
     cout<<"Numero de cedula: "; cin>>_CI;
     _CI = validarCedula(_CI);
-    //falta calcular la fecha
-    cout<<"fecha";
-    edad.ingresarFechaNacimiento();
+    cout<<"Fecha de nacimiento.\n";
+    fechaNacimiento.ingresarFechaNacimiento();
     cout<<"Digite su lugar de localizacion: "; cin>>_localizacion;
     cout<<"Numero telefFonico: "; cin>>_telefono;
     cout<<"Digite su sueldo: "; cin>>_sueldo;
-    Persona tmp(_nombre,_apellido,_CI,edad,_localizacion,_telefono,_sueldo,"no definido","no definido");
+    Persona tmp(_nombre,_apellido,_CI,fechaNacimiento,_localizacion,_telefono,_sueldo,"no definido","no definido");
     return tmp;
 }
 

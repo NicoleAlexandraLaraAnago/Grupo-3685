@@ -1,17 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 #define dim 10
-
+#pragma once
+using namespace std;
 
 long int validarCedula(long int cedula){
     int A[dim],i=9,sumapar=0,sumaimp=0,sumatot,mult=0,digito;
     long int coc=0;
-    while(!isdigit(cedula)){
-        printf("\nCedula invalida\nIngrese nuevamente: ");
-        fflush(stdin);
-        scanf("%ld",&cedula);
-        fflush(stdin);
-    }
     do
     {
         i=9;
@@ -48,13 +43,6 @@ long int validarCedula(long int cedula){
             fflush(stdin);
             scanf("%ld",&cedula);
             fflush(stdin);
-            
-            while(!isdigit(cedula)){
-                printf("\nCedula invalida\nIngrese nuevamente: ");
-                fflush(stdin);
-                scanf("%ld",&cedula);
-                fflush(stdin);
-            }
         }
 
     }while (digito!=A[9]);
