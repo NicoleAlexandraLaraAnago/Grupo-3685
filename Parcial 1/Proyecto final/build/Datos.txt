@@ -1,0 +1,135 @@
+Nombre: cristian
+Apellido: maranje
+Cedula: 1726999376
+Localización: ec
+Telefono: 12345644
+Sueldo: 1233
+Correo: cmaranje@espe.edu.ec
+
+
+Nombre: cristian
+Apellido: maranje
+Cedula: 1726999276
+Localización: ec
+Telefono: 333
+Sueldo: 33
+Correo: cmaranje@espe.edu.ec
+
+
+Nombre: cristian
+Apellido: maranje
+Cedula: 1726999276
+Localización: ec
+Telefono: 333
+Sueldo: 33
+Correo: cmaranje@espe.edu.ec
+
+
+Nombre: casdfa
+Apellido: maranje
+Cedula: 1726999376
+Localización: ec
+Telefono: 3
+Sueldo: 3
+Correo: cmaranje1@espe.edu.ec
+
+
+Nombre: asdf
+Apellido: asdf
+Cedula: 1726999376
+Localización: ec
+Telefono: 45
+Sueldo: 5
+Correo: aasdf@espe.edu.ec
+
+
+Nombre: avvvvvv
+Apellido: asdf
+Cedula: 1726999376
+Localización: cc
+Telefono: 22
+Sueldo: 22
+Correo: aasdf1@espe.edu.ec
+
+
+Nombre: asdf
+Apellido: asdf
+Cedula: 1726999376
+Localización: 2
+Telefono: 2
+Sueldo: 2
+Correo: aasdf@espe.edu.ec
+
+
+Nombre: asdf
+Apellido: asd
+Cedula: 1726999376
+Localización: 2
+Telefono: 2
+Sueldo: 2
+Correo: aasd@espe.edu.ec
+
+
+Nombre: asdf
+Apellido: asdf
+Cedula: 1726999376
+Localización: ec
+Telefono: 2
+Sueldo: 22
+Correo: aasdf@espe.edu.ec
+
+
+Nombre: asdf
+Apellido: asdf
+Cedula: 1726999376
+Localización: ec
+Telefono: 2
+Sueldo: 2
+Correo: aasdf@espe.edu.ec
+
+
+Nombre: sadf
+Apellido: asdf
+Cedula: 1726999376
+Localización: ec
+Telefono: 123
+Sueldo: 123
+Correo: sasdf@espe.edu.ec
+
+
+Nombre: asdf
+Apellido: sadf
+Cedula: 1726999376
+Localización: ec
+Telefono: 1
+Sueldo: 1
+Correo: asadf@espe.edu.ec
+
+
+Nombre: sdaf
+Apellido: asdf
+Cedula: 123
+Localización: ec
+Telefono: 123
+Sueldo: 123
+Correo: sasdf@espe.edu.ec
+
+
+Nombre: asdf
+Apellido: asd
+Cedula: 123
+Localización: ec
+Telefono: 123
+Sueldo: 123
+Correo: aasd@espe.edu.ec
+
+
+Nombre: asdf
+Apellido: asdf
+Cedula: 12
+Localización: 2
+Telefono: 2
+Sueldo: 2
+Correo: aasdf@espe.edu.ec
+
+

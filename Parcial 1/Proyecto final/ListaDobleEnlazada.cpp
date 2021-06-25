@@ -1,9 +1,10 @@
-#include "lista_doble_enlazada.h"
+#include "ListaDobleEnlazada.h"
+#include "Archivo.h"
 #include <stdexcept>
 #include <exception>
 
-void ListaDobleEnlazada::insertar(int valor) {
-    Nodo *nodo = new Nodo(valor);
+void ListaDobleEnlazada::insertar(Persona persona) {
+    Nodo *nodo = new Nodo(persona);
     Nodo *ultimo;
 
     // incrementamos el tamaño de la lista
@@ -25,13 +26,13 @@ void ListaDobleEnlazada::insertar(int valor) {
     nodo->set_anterior(ultimo);
 }
 
-void ListaDobleEnlazada::insertar_inicio(int valor) {
+void ListaDobleEnlazada::insertar_inicio(Persona persona) {
     // si la cabeza es nula, entonces insertamos el nuevo elemento solamente
     if (cabeza == nullptr) {
-        return insertar(valor);
+        return insertar(persona);
     }
 
-    Nodo *nodo = new Nodo(valor);
+    Nodo *nodo = new Nodo(persona);
     Nodo *temporal = cabeza;
 
     cabeza = nodo;
@@ -40,22 +41,22 @@ void ListaDobleEnlazada::insertar_inicio(int valor) {
     tamanio++;
 }
 
-void ListaDobleEnlazada::insertar_en(int indice, int valor) {
+void ListaDobleEnlazada::insertar_en(int indice, Persona persona) {
     if (indice < 0 || indice > tamanio) {
         throw std::invalid_argument("indice fuera de los limites de la lista");
     }
 
     if (indice == 0 || tamanio == 0) {
-        return insertar_inicio(valor);
+        return insertar_inicio(persona);
     } else if (indice == tamanio) {
-        return insertar(valor);
+        return insertar(persona);
     }
 
     Nodo *actual = obtener_nodo(indice);
     Nodo *anterior = actual->get_anterior();
     Nodo *siguiente = actual->get_siguiente();
 
-    Nodo *nodo = new Nodo(valor);
+    Nodo *nodo = new Nodo(persona);
 
     anterior->set_siguiente(nodo);
     nodo->set_siguiente(actual);
@@ -94,16 +95,24 @@ void ListaDobleEnlazada::eliminar(int indice) {
     tamanio--;
 }
 
-void ListaDobleEnlazada::recorrer(std::function<void(int, int)> callback) {
+void ListaDobleEnlazada::recorrer(std::function<void(Persona, int)> callback) {
     Nodo *temporal = cabeza;
     int indice = 0;
 
     while (temporal != nullptr) {
-        callback(temporal->get_valor(), indice++);
+        callback(temporal->get_persona(), indice++);
         temporal = temporal->get_siguiente();
     }
 }
-
+void ListaDobleEnlazada::guardar(){
+    Nodo *temporal = cabeza;
+    int indice = 0;
+    Archivo archivo;
+    while (temporal != nullptr) {
+        archivo.crearArchivo(temporal->get_persona());
+        temporal = temporal->get_siguiente();
+    }
+}
 Nodo *ListaDobleEnlazada::ultimo_nodo() {
     Nodo *temporal = cabeza;
 

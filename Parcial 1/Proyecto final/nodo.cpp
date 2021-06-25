@@ -1,7 +1,7 @@
 #include "nodo.h"
 
-Nodo::Nodo(int _valor) {
-    this->valor = _valor;
+Nodo::Nodo(Persona persona) {
+    this->persona = persona;
 }
 
 Nodo *Nodo::get_anterior() {
@@ -20,10 +20,10 @@ void Nodo::set_siguiente(Nodo *nodo) {
     this->siguiente = nodo;
 }
 
-int Nodo::get_valor() {
-    return valor;
+Persona Nodo::get_persona() {
+    return persona;
 }
 
-void Nodo::set_valor(int _valor) {
-    this->valor = valor;
+void Nodo::set_persona(Persona persona) {
+    this->persona = persona;
 }

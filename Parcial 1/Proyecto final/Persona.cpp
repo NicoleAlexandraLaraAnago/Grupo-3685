@@ -1,10 +1,12 @@
+#include <iostream>
+#include <string>
 #include "Persona.h"
 #include "Validaciones.h"
 
 
 using namespace std;
 
-Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha _edad, string _localizacion, long int _telefono, float _sueldo, string _correo, string _fecha){
+Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, long int _telefono, float _sueldo, string _correo,Tabla *_tabla){
     this->nombre = _nombre;
     this->apellido = _apellido;
     this->CI = _CI;
@@ -13,7 +15,7 @@ Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha _edad, st
     this->telefono = _telefono;
     this->sueldo = _sueldo;
     this->correo = _correo;
-    this->fecha = _fecha;
+    this->tabla = _tabla;
 }
 Persona::Persona(){
     this->nombre = "usuario";
@@ -23,27 +25,41 @@ Persona::Persona(){
     this->telefono = 99999;
     this->sueldo = 99999;
     this->correo = "no definido";
-    this->fecha ="no definido";
 }
 
 Persona Persona::nuevaPersona(){
-    string _nombre,_apellido,_localizacion;
+    string _nombre,_apellido,_localizacion,_correo;
     long int _CI,_telefono;
     float _sueldo;
     cout<<"PERSONA"<<endl;
     cout<<"Digite sus nombres: ";cin>> _nombre;
+    nombre=_nombre;
     cout<<"Digite su apellido: ";cin>> _apellido;
+    apellido=_apellido;
     cout<<"Numero de cedula: "; cin>>_CI;
-    _CI = validarCedula(_CI);
+    //_CI = validarCedula(_CI);
     cout<<"Fecha de nacimiento.\n";
-    fechaNacimiento.ingresarFechaNacimiento();
+    fechaNacimiento = fechaNacimiento->ingresarFecha();
     cout<<"Digite su lugar de localizacion: "; cin>>_localizacion;
-    cout<<"Numero telefFonico: "; cin>>_telefono;
+    cout<<"Numero telefonico: "; cin>>_telefono;
     cout<<"Digite su sueldo: "; cin>>_sueldo;
-    Persona tmp(_nombre,_apellido,_CI,fechaNacimiento,_localizacion,_telefono,_sueldo,"no definido","no definido");
+    generarCorreo(0);
+    tabla = tabla->generarTabla();
+    Persona tmp(_nombre,_apellido,_CI,fechaNacimiento,_localizacion,_telefono,_sueldo,correo,tabla);
     return tmp;
 }
 
+void Persona::generarCorreo(int cont){
+    string localNonbre = nombre;
+    string localApellido = apellido;
+    for (int i = 0; i < localNonbre.length(); i++) localNonbre[i] = tolower(localNonbre[i]);
+    for (int i = 0; i < localApellido.length(); i++) localApellido[i] = tolower(localApellido[i]);
+    if(cont==0){
+        correo=localNonbre[0]+localApellido+"@espe.edu.ec";
+    }else{
+        correo=localNonbre[0]+localApellido+to_string(cont)+"@espe.edu.ec";
+    }
+}
 
 /*-----------------setters-----------------*/
 
@@ -56,7 +72,6 @@ void Persona :: setApellido(string _apellido){
 void Persona :: setCI(long _CI){
     CI = _CI;
 }
-
 void Persona :: setLocalizacion(string _localizacion){
     localizacion = _localizacion;
 }
@@ -70,12 +85,13 @@ void Persona :: setCorreo(string _correo){
     correo = _correo;
 }
 
-void Persona :: setFecha(string _fecha){
-   fecha = _fecha;
-}
-
 /*-----------------getters------------------*/
-
+Fecha* Persona::getFechaNacimiento(){
+    return fechaNacimiento;
+}
+Tabla* Persona::getTabla(){
+    return tabla;
+}
 string Persona :: getNombre(){
     return nombre;
 }
@@ -96,8 +112,5 @@ float Persona :: getSueldo(){
 }
 string Persona :: getCorreo(){
     return correo;
-}
-string Persona :: getFecha(){
-    return fecha;
 }
 

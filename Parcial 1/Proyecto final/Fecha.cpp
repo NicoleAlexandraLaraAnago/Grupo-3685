@@ -16,39 +16,36 @@ Fecha::Fecha(int day,int month,int year){
 	this->day=day;
 }
 
-Fecha Fecha::ingresarFechaNacimiento(){
+Fecha* Fecha::ingresarFecha(){
 	int year2, month2, day2;//fecha nacimiento
 	
 	//ingreso y validacion del anio
-	cout << "Ingresar Anio de nacimiento (xxxx): " << endl;
+	cout << "Ingresar Anio (xxxx): " << endl;
 	cin >> year2;
-	while( year2 < 0 || year2 > 2021 ){
+	while( year2 < 1900 || year2 > 2021 ){
 		cout << "Dato no valido, volver a ingresar: " << endl;
 		fflush(stdin);
 		cin >> year2;
 	}
-	year=year2;
 
 	//ingreso y validacion del mes
-	cout << "Ingresar Mes de nacimiento (xx): " << endl;
+	cout << "Ingresar Mes (xx): " << endl;
 	cin >> month2;
 	while( month2 < 1 || month2 > 12 ){
 		cout << "Dato no valido, volver a ingresar: " << endl;
 		fflush(stdin);
 		cin >> month2;
 	}
-	month=month2;
 
 	//ingreso y validacion del dia
-	cout << "Ingresar Dia de nacimiento (xx): " << endl;
+	cout << "Ingresar Dia (xx): " << endl;
 	cin >> day2;
 	while( day2 < 1 || day2 > 30 ){
 		cout << "Dato no valido, volver a ingresar: " << endl;
 		fflush(stdin);
 		cin >> day2;
 	}
-	day=day2;
-	Fecha tmp(day2,month2,year2);
+	Fecha *tmp = new Fecha(day2,month2,year2);
 	return tmp;
 }
 
@@ -83,14 +80,7 @@ int Fecha::_edad(){
  
 	int yearT;
 	yearT = year1 - year2;
-	
-	cout << endl << "--------DATOS-------" << endl;
-    cout << " Anio/s: " <<yearT << endl; 
-    cout << " Mese/s: " << respMes << endl;
-    cout << " Dia/s: " << respDia << endl;
-    
     return yearT;
-		
 }
 
 //---------------setters--------------

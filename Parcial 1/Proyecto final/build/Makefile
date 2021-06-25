@@ -522,6 +522,30 @@ ProyectoPrimerParcial/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/build
 .PHONY : ProyectoPrimerParcial/fast
 
+Archivo.obj: Archivo.cpp.obj
+.PHONY : Archivo.obj
+
+# target to build an object file
+Archivo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/Archivo.cpp.obj
+.PHONY : Archivo.cpp.obj
+
+Archivo.i: Archivo.cpp.i
+.PHONY : Archivo.i
+
+# target to preprocess a source file
+Archivo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/Archivo.cpp.i
+.PHONY : Archivo.cpp.i
+
+Archivo.s: Archivo.cpp.s
+.PHONY : Archivo.s
+
+# target to generate assembly for a file
+Archivo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/Archivo.cpp.s
+.PHONY : Archivo.cpp.s
+
 Fecha.obj: Fecha.cpp.obj
 .PHONY : Fecha.obj
 
@@ -545,6 +569,30 @@ Fecha.s: Fecha.cpp.s
 Fecha.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/Fecha.cpp.s
 .PHONY : Fecha.cpp.s
+
+ListaDobleEnlazada.obj: ListaDobleEnlazada.cpp.obj
+.PHONY : ListaDobleEnlazada.obj
+
+# target to build an object file
+ListaDobleEnlazada.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.obj
+.PHONY : ListaDobleEnlazada.cpp.obj
+
+ListaDobleEnlazada.i: ListaDobleEnlazada.cpp.i
+.PHONY : ListaDobleEnlazada.i
+
+# target to preprocess a source file
+ListaDobleEnlazada.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.i
+.PHONY : ListaDobleEnlazada.cpp.i
+
+ListaDobleEnlazada.s: ListaDobleEnlazada.cpp.s
+.PHONY : ListaDobleEnlazada.s
+
+# target to generate assembly for a file
+ListaDobleEnlazada.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/ListaDobleEnlazada.cpp.s
+.PHONY : ListaDobleEnlazada.cpp.s
 
 Persona.obj: Persona.cpp.obj
 .PHONY : Persona.obj
@@ -570,6 +618,30 @@ Persona.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/Persona.cpp.s
 .PHONY : Persona.cpp.s
 
+Tabla.obj: Tabla.cpp.obj
+.PHONY : Tabla.obj
+
+# target to build an object file
+Tabla.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/Tabla.cpp.obj
+.PHONY : Tabla.cpp.obj
+
+Tabla.i: Tabla.cpp.i
+.PHONY : Tabla.i
+
+# target to preprocess a source file
+Tabla.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/Tabla.cpp.i
+.PHONY : Tabla.cpp.i
+
+Tabla.s: Tabla.cpp.s
+.PHONY : Tabla.s
+
+# target to generate assembly for a file
+Tabla.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/Tabla.cpp.s
+.PHONY : Tabla.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -593,6 +665,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+nodo.obj: nodo.cpp.obj
+.PHONY : nodo.obj
+
+# target to build an object file
+nodo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj
+.PHONY : nodo.cpp.obj
+
+nodo.i: nodo.cpp.i
+.PHONY : nodo.i
+
+# target to preprocess a source file
+nodo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.i
+.PHONY : nodo.cpp.i
+
+nodo.s: nodo.cpp.s
+.PHONY : nodo.s
+
+# target to generate assembly for a file
+nodo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProyectoPrimerParcial.dir\build.make CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.s
+.PHONY : nodo.cpp.s
 
 # Help Target
 help:
@@ -634,15 +730,27 @@ help:
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
 	@echo ... ProyectoPrimerParcial
+	@echo ... Archivo.obj
+	@echo ... Archivo.i
+	@echo ... Archivo.s
 	@echo ... Fecha.obj
 	@echo ... Fecha.i
 	@echo ... Fecha.s
+	@echo ... ListaDobleEnlazada.obj
+	@echo ... ListaDobleEnlazada.i
+	@echo ... ListaDobleEnlazada.s
 	@echo ... Persona.obj
 	@echo ... Persona.i
 	@echo ... Persona.s
+	@echo ... Tabla.obj
+	@echo ... Tabla.i
+	@echo ... Tabla.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... nodo.obj
+	@echo ... nodo.i
+	@echo ... nodo.s
 .PHONY : help
 
 

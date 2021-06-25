@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
+//#include <ctype>
 #define dim 10
 #pragma once
 using namespace std;
 
 long int validarCedula(long int cedula){
     int A[dim],i=9,sumapar=0,sumaimp=0,sumatot,mult=0,digito;
-    long int coc=0;
+    long int coc=0,tmpCedula=0;
     do
     {
         i=9;
@@ -14,6 +15,7 @@ long int validarCedula(long int cedula){
         sumaimp=0;
         mult=0;
         digito=0;
+        tmpCedula=cedula;
         do
         {
             coc=cedula/10;
@@ -37,7 +39,7 @@ long int validarCedula(long int cedula){
         if (digito==10){
             digito=0;
         }if (digito==A[9]){
-            printf("\nCedula valida\n");
+            printf("Cedula valida.\n");
         }else{
             printf("\nCedula invalida\nIngrese nuevamente: ");
             fflush(stdin);
@@ -46,7 +48,7 @@ long int validarCedula(long int cedula){
         }
 
     }while (digito!=A[9]);
-    return cedula;
+    return tmpCedula;
 }
     
 long int validarNumero(string mensaje){
@@ -66,4 +68,30 @@ long int validarNumero(string mensaje){
 		}
 	}while(true);
 	return dato;
+}
+
+void ValidarTelefono(){
+       string telf,errores;
+   int i=0;
+    bool digito = true;
+    cout << "telefono" ;
+    cin>>telf;
+    while(telf[i]){
+
+            if(i==4){
+              if(telf[i]!='-')
+              errores += "  el formato debe ser  con  (-) \n\n";
+                    }
+
+             else
+                 if( !isdigit(telf[i] && digito)){
+                  errores += " solo  se acpetan digitos del 0-9 \n\n";
+                  digito = false;
+                    }
+      i++;
+
+    }
+
+            cout <<errores<< endl;
+    return 0;
 }
