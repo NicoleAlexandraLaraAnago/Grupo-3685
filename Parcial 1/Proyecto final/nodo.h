@@ -1,4 +1,6 @@
 #pragma once
+#include<iostream>
+using namespace std;
 
 class Nodo {
 public:
@@ -15,6 +17,6 @@ public:
 
 private:
     int valor;
-    Nodo *siguiente = nullptr;
-    Nodo *anterior = nullptr;
+    Nodo *siguiente = NULL;//nullptr;
+    Nodo *anterior = NULL;//nullptr;
 };

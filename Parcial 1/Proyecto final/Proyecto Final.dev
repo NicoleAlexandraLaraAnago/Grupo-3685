@@ -28,8 +28,8 @@ Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
-CompilerSettings=00000000c0000000000000000
-UnitCount=8
+CompilerSettings=0000000000000000000000000
+UnitCount=9
 
 [VersionInfo]
 Major=1
@@ -101,16 +101,6 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=Edad.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit7]
 FileName=Fecha.h
 CompileCpp=1
 Folder=
@@ -120,8 +110,28 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit8]
+[Unit7]
 FileName=Validaciones.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit8]
+FileName=nodo.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit9]
+FileName=nodo.h
 CompileCpp=1
 Folder=
 Compile=1
