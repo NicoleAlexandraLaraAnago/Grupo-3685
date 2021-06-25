@@ -12,13 +12,13 @@ class Persona{
         long int CI;
         Fecha *fechaNacimiento;
         string localizacion;
-        long int telefono;
+        string telefono;
         float sueldo;
         string correo;
         Tabla *tabla;
 
     public:
-        Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, long int _telefono, float _sueldo, string _correo,Tabla *_tabla);
+        Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, string _telefono, float _sueldo, string _correo,Tabla *_tabla);
         Persona();
         Persona nuevaPersona();
         void generarCorreo(int);
@@ -27,7 +27,7 @@ class Persona{
         void setApellido(string);
         void setCI(long int);
         void setLocalizacion(string);
-        void setTelefono(long);
+        void setTelefono(string);
         void setSueldo(float);
         void setCorreo(string);
 
@@ -35,7 +35,7 @@ class Persona{
         string getApellido();
         long getCI();
         string getLocalizacion();
-        long getTelefono();
+        string getTelefono();
         float getSueldo();
         string getCorreo();
         Fecha* getFechaNacimiento();

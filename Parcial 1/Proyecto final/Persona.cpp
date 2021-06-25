@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, long int _telefono, float _sueldo, string _correo,Tabla *_tabla){
+Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, string _telefono, float _sueldo, string _correo,Tabla *_tabla){
     this->nombre = _nombre;
     this->apellido = _apellido;
     this->CI = _CI;
@@ -22,14 +22,14 @@ Persona::Persona(){
     this->apellido = "usuario";
     this->CI = 99999;
     this->localizacion = "no definido";
-    this->telefono = 99999;
+    this->telefono = "99999";
     this->sueldo = 99999;
     this->correo = "no definido";
 }
 
 Persona Persona::nuevaPersona(){
-    string _nombre,_apellido,_localizacion,_correo;
-    long int _CI,_telefono;
+    string _nombre,_apellido,_localizacion,_correo,_telefono;
+    long int _CI;
     float _sueldo;
     cout<<"PERSONA"<<endl;
     cout<<"Digite sus nombres: ";cin>> _nombre;
@@ -37,11 +37,13 @@ Persona Persona::nuevaPersona(){
     cout<<"Digite su apellido: ";cin>> _apellido;
     apellido=_apellido;
     cout<<"Numero de cedula: "; cin>>_CI;
-    //_CI = validarCedula(_CI);
-    cout<<"Fecha de nacimiento.\n";
+    _CI = validarCedula(_CI);
+    cout<<"Ingrese su fecha de nacimiento.\n";
     fechaNacimiento = fechaNacimiento->ingresarFecha();
     cout<<"Digite su lugar de localizacion: "; cin>>_localizacion;
-    cout<<"Numero telefonico: "; cin>>_telefono;
+    fflush(stdin);
+    cout<<"Numero telefonico: "; getline(cin,_telefono);
+    _telefono = ValidarTelefono(_telefono);
     cout<<"Digite su sueldo: "; cin>>_sueldo;
     generarCorreo(0);
     tabla = tabla->generarTabla();
@@ -75,7 +77,7 @@ void Persona :: setCI(long _CI){
 void Persona :: setLocalizacion(string _localizacion){
     localizacion = _localizacion;
 }
-void Persona :: setTelefono(long _telefono){
+void Persona :: setTelefono(string _telefono){
     telefono = _telefono;
 }
 void Persona :: setSueldo(float _sueldo){
@@ -104,7 +106,7 @@ long Persona :: getCI(){
 string Persona :: getLocalizacion(){
     return localizacion;
 }
-long Persona :: getTelefono(){
+string Persona :: getTelefono(){
     return telefono;
 }
 float Persona :: getSueldo(){

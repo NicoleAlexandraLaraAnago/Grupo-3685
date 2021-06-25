@@ -107,16 +107,7 @@ void ListaDobleEnlazada::recorrer(std::function<void(Persona, int)> callback) {
         temporal = temporal->get_siguiente();
     }
 }
-void ListaDobleEnlazada::guardar(){
-    Nodo *temporal = cabeza;
-    int indice = 0;
-    Archivo archivo;
-    while (temporal != nullptr) {
-        //archivo.crearArchivo(temporal->get_persona());
-        cout<<"cilo";
-        temporal = temporal->get_siguiente();
-    }
-}
+
 Nodo *ListaDobleEnlazada::ultimo_nodo() {
     Nodo *temporal = cabeza;
 

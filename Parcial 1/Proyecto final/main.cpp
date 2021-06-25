@@ -8,10 +8,9 @@
 #include "Archivo.h"
 #include<locale.h>
 #include<conio.h>
-//void menu();
+
 
 int main(){
-	//menu();
 	Archivo archivo;
 	ListaDobleEnlazada listaDoble;
 	string dato;

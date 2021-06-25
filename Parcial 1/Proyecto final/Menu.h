@@ -31,7 +31,6 @@ class Menu {
 
 		for (;;) {
 			system("cls");
-			//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 60);
 			cout << "					BIENVENIDO                    " << endl;
 			for (int i = 0; i < 4; i++) {
 				if (cursor == i) {
@@ -73,7 +72,6 @@ class Menu {
 		char tecla;
 		for (;;) {
 			system("cls");
-		//	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 60);
 			cout << "				Desea continuar                    " << endl;
 			for (int i = 0; i < 2; i++) {
 				if (cursor == i) {

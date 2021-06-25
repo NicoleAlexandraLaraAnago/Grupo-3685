@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-//#include <ctype>
 #define dim 10
 #pragma once
 using namespace std;
@@ -70,28 +69,48 @@ long int validarNumero(string mensaje){
 	return dato;
 }
 
-void ValidarTelefono(){
-       string telf,errores;
-   int i=0;
-    bool digito = true;
-    cout << "telefono" ;
-    cin>>telf;
-    while(telf[i]){
+bool esNumerico(string telefono);
 
-            if(i==4){
-              if(telf[i]!='-')
-              errores += "  el formato debe ser  con  (-) \n\n";
-                    }
+string ValidarTelefono(string telefono){
+    bool repite=true;
+    do{
+        if(esNumerico(telefono)){
+            repite=false;
+        }else{
+            cout<<"No ha ingresado un entero. Intente nuevamente"<<endl;
+            fflush(stdin);
+            cout<<"Ingrese el Telefono: "; getline(cin,telefono);
+        }
 
-             else
-                 if( !isdigit(telf[i] && digito)){
-                  errores += " solo  se acpetan digitos del 0-9 \n\n";
-                  digito = false;
-                    }
-      i++;
+    }while(repite);
+    return telefono;
+}
 
+bool esNumerico(string telefono){
+    bool b = true;
+    int longitud=telefono.size();
+    
+    if(longitud==0){
+        b=false;
+    }else if(longitud<10){
+        b=false;
+    }else if(longitud==1 && !isdigit(telefono[0])){
+        b=false;
+    }else{
+        int i;
+        if(telefono[0]=='+'){
+            i=1;
+        }else{
+            i=0;
+        }
+
+        while(i<longitud){
+            if(!isdigit(telefono[i])){
+                b=false;
+                break;
+            }
+            i++;
+        }
     }
-
-            cout <<errores<< endl;
-    //return 0;
+    return b;
 }
