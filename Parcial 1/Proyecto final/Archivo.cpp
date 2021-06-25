@@ -11,7 +11,7 @@ Archivo::Archivo(){
 
 }
 
-void Archivo::crearArchivo(Persona persona){
+void Archivo::crearArchivo(ListaDobleEnlazada listaDoble){
     ofstream archivo;
     archivo.open("Datos.txt", ios::out);
 
@@ -19,25 +19,29 @@ void Archivo::crearArchivo(Persona persona){
         cout<<"ERROR!! EL ARCHIVO NO SE HA CREADO ";
         exit(1);
     }
-    Fecha *tmpFecha = new Fecha();
-    tmpFecha=persona.getFechaNacimiento();
-    Tabla *tmpTabla = new Tabla();
-    tmpTabla = persona.getTabla();
-    archivo << "Nombre: " <<persona.getNombre()<<endl;
-    archivo << "Apellido: " <<persona.getApellido()<<endl;
-    archivo << "Cedula: " <<persona.getCI()<<endl;
-    archivo << "Fecha de nacimiento: "<<tmpFecha->getDay()<<"/"<<tmpFecha->getMonth()<<"/"<<tmpFecha->getYear()<<endl;
-    archivo << "Edad: "<<tmpFecha->_edad()<<endl;
-    archivo << "Localización: " <<persona.getLocalizacion()<<endl;
-    archivo << "Telefono: " <<persona.getTelefono()<<endl;
-    archivo << "Sueldo: " <<persona.getSueldo()<<endl;
-    archivo << "Correo: " <<persona.getCorreo()<<endl;
-    archivo<<"Vencimiento\t\tPago\t\tInteres\t\tAmortizacion\t\tSaldo\n";
-    int cont=0;
-    float amortizacion=0,saldo= tmpTabla->getTotal(),pagos=0,interes=0;
-    int plazo=tmpTabla->getNumCuotas();
-    string tmp;
-    while (cont<=plazo)
+    Nodo *temporal = listaDoble.getCabeza();
+    int indice = 0;
+    while (temporal != nullptr) {
+        Persona persona = temporal->get_persona();
+        Fecha *tmpFecha = new Fecha();
+        tmpFecha=persona.getFechaNacimiento();
+        Tabla *tmpTabla = new Tabla();
+        tmpTabla = persona.getTabla();
+        archivo << "Nombre: " <<persona.getNombre()<<endl;
+        archivo << "Apellido: " <<persona.getApellido()<<endl;
+        archivo << "Cedula: " <<persona.getCI()<<endl;
+        archivo << "Fecha de nacimiento: "<<tmpFecha->getDay()<<"/"<<tmpFecha->getMonth()<<"/"<<tmpFecha->getYear()<<endl;
+        archivo << "Edad: "<<tmpFecha->_edad()<<endl;
+        archivo << "Localización: " <<persona.getLocalizacion()<<endl;
+        archivo << "Telefono: " <<persona.getTelefono()<<endl;
+        archivo << "Sueldo: " <<persona.getSueldo()<<endl;
+        archivo << "Correo: " <<persona.getCorreo()<<endl;
+        archivo<<"Vencimiento\t\tPago\t\tInteres\t\tAmortizacion\t\tSaldo\n";
+        int cont=0;
+        float amortizacion=0,saldo= tmpTabla->getTotal(),pagos=0,interes=0;
+        int plazo=tmpTabla->getNumCuotas();
+        string tmp;
+        while (cont<=plazo)
     {
         tmp = tmpTabla->guardarDiaDePago(tmpTabla->getFechaPago(),cont);
         archivo<<tmp<<"\t\t"<<pagos<<"\t\t"<<interes<<"\t\t"<<amortizacion<<"\t\t"<<saldo<<endl;
@@ -47,6 +51,10 @@ void Archivo::crearArchivo(Persona persona){
         saldo=saldo-amortizacion;
         cont++;
     }
+
+        temporal = temporal->get_siguiente();
+    }
+    
     archivo << "\n\n";
     archivo.close();
 }

@@ -13,7 +13,7 @@ class Archivo{
 
     public: 
     Archivo();
-    void crearArchivo(Persona persona);
+    void crearArchivo(ListaDobleEnlazada listaDoble);
     void backUp();
 
 };

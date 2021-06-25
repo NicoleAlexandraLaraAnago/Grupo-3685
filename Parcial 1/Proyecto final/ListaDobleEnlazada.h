@@ -12,6 +12,7 @@ class ListaDobleEnlazada {
         void guardar();
         void recorrer(std::function<void(Persona, int)> callback);
         int get_tamanio();
+        Nodo* getCabeza();
 
     private:
         Nodo *ultimo_nodo();

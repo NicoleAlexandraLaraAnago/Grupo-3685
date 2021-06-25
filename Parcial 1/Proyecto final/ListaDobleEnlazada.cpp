@@ -3,6 +3,10 @@
 #include <stdexcept>
 #include <exception>
 
+Nodo *ListaDobleEnlazada::getCabeza(){
+    return cabeza;
+}
+
 void ListaDobleEnlazada::insertar(Persona persona) {
     Nodo *nodo = new Nodo(persona);
     Nodo *ultimo;
@@ -108,7 +112,7 @@ void ListaDobleEnlazada::guardar(){
     int indice = 0;
     Archivo archivo;
     while (temporal != nullptr) {
-        archivo.crearArchivo(temporal->get_persona());
+        //archivo.crearArchivo(temporal->get_persona());
         cout<<"cilo";
         temporal = temporal->get_siguiente();
     }
