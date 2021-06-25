@@ -14,6 +14,14 @@ public:
     Tabla();
     Tabla* generarTabla();
     void imprimirTabla();
+    void guardarTabla();
+    float calcularPagos();
+    float calcularInteres(float);
+    void diaDePago (Fecha *,int);
+    bool validarDiaLaborable(int,int,int);
+    int diaSemana(int,int,int);
+    bool validarLosDias (int, int);
+    string guardarDiaDePago (Fecha *,int);
 
     void setFechaPago(Fecha*);
     void setTotal(float);

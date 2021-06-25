@@ -38,7 +38,6 @@ int main(){
     				}
 					listaDoble.insertar(persona1);
 				}while(menu.repetir() != 1);
-				listaDoble.guardar();
 				system("cls");	
 				break;
 
@@ -48,7 +47,6 @@ int main(){
 					cout<<"Ingrese el indice de la persona que desea eliminar: ";cin>>indice1;
 					listaDoble.eliminar(indice1);
 				}while(menu.repetir() != 1);
-				//cola
 				break;
 			case 2:				
 					system("cls");
@@ -70,6 +68,7 @@ int main(){
 					system("pause");					
 				break;
 			default:
+				listaDoble.guardar();
 				cout << "Saliendo.....\n";
 				break;			
 		}

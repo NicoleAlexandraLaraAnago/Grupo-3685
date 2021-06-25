@@ -4,33 +4,51 @@
 #include <string>
 #include <ctime>
 #include<iostream>
+#include <fstream>
+#include <stdlib.h>
 using namespace std;
 Archivo::Archivo(){
 
 }
 
 void Archivo::crearArchivo(Persona persona){
-    int opcion;
     ofstream archivo;
-    archivo.open("Datos.txt", ios::out | ios::app );
+    archivo.open("Datos.txt", ios::out);
 
     if(archivo.fail()){
         cout<<"ERROR!! EL ARCHIVO NO SE HA CREADO ";
         exit(1);
     }
-    
-    cout<<"\\nDatos de las personas insertadas"<<endl;
+    Fecha *tmpFecha = new Fecha();
+    tmpFecha=persona.getFechaNacimiento();
+    Tabla *tmpTabla = new Tabla();
+    tmpTabla = persona.getTabla();
     archivo << "Nombre: " <<persona.getNombre()<<endl;
     archivo << "Apellido: " <<persona.getApellido()<<endl;
     archivo << "Cedula: " <<persona.getCI()<<endl;
+    archivo << "Fecha de nacimiento: "<<tmpFecha->getDay()<<"/"<<tmpFecha->getMonth()<<"/"<<tmpFecha->getYear()<<endl;
+    archivo << "Edad: "<<tmpFecha->_edad()<<endl;
     archivo << "Localización: " <<persona.getLocalizacion()<<endl;
     archivo << "Telefono: " <<persona.getTelefono()<<endl;
     archivo << "Sueldo: " <<persona.getSueldo()<<endl;
     archivo << "Correo: " <<persona.getCorreo()<<endl;
+    archivo<<"Vencimiento\t\tPago\t\tInteres\t\tAmortizacion\t\tSaldo\n";
+    int cont=0;
+    float amortizacion=0,saldo= tmpTabla->getTotal(),pagos=0,interes=0;
+    int plazo=tmpTabla->getNumCuotas();
+    string tmp;
+    while (cont<=plazo)
+    {
+        tmp = tmpTabla->guardarDiaDePago(tmpTabla->getFechaPago(),cont);
+        archivo<<tmp<<"\t\t"<<pagos<<"\t\t"<<interes<<"\t\t"<<amortizacion<<"\t\t"<<saldo<<endl;
+        pagos=tmpTabla->calcularPagos();
+        interes = tmpTabla->calcularInteres(saldo);
+        amortizacion=pagos-interes;
+        saldo=saldo-amortizacion;
+        cont++;
+    }
     archivo << "\n\n";
     archivo.close();
-
-
 }
 #pragma warning(disable : 4996) 
 

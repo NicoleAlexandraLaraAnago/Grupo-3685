@@ -93,5 +93,5 @@ void ValidarTelefono(){
     }
 
             cout <<errores<< endl;
-    return 0;
+    //return 0;
 }

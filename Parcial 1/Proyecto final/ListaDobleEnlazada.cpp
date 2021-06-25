@@ -91,7 +91,6 @@ void ListaDobleEnlazada::eliminar(int indice) {
         siguiente->set_anterior(anterior);
         delete actual;
     }
-
     tamanio--;
 }
 
@@ -110,6 +109,7 @@ void ListaDobleEnlazada::guardar(){
     Archivo archivo;
     while (temporal != nullptr) {
         archivo.crearArchivo(temporal->get_persona());
+        cout<<"cilo";
         temporal = temporal->get_siguiente();
     }
 }

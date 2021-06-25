@@ -1,8 +1,6 @@
 CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj: \
  D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\nodo.cpp \
  D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\nodo.h \
- D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Persona.h \
- D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Fecha.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -129,4 +127,6 @@ CMakeFiles/ProyectoPrimerParcial.dir/nodo.cpp.obj: \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+ D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Persona.h \
+ D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Fecha.h \
  D:\u\progra\Estructura_de_Datos\github\Grupo-3685\Parcial\ 1\Proyecto\ final\Tabla.h

@@ -46,6 +46,7 @@ class Menu {
 			}
 			for (;;) {
 				tecla = _getch();
+				fflush(stdin);
 				if (tecla == 80) {
 					cursor++;
 					if (cursor == 4) {
@@ -87,6 +88,7 @@ class Menu {
 			}
 			for (;;) {
 				tecla = _getch();
+				fflush(stdin);
 				if (tecla == 80) {
 					cursor++;
 					if (cursor == 2) {
