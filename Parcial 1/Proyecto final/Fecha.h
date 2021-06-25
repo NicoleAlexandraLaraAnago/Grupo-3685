@@ -6,7 +6,7 @@ class Fecha{
 	public: 
 		Fecha();
 		Fecha(int day,int month,int year);
-		Fecha* ingresarFechaNacimiento();
+		Fecha* ingresarFecha();
 		int _edad();
 		void setYear(int);
 		void setMonth(int);

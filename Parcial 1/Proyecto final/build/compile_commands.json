@@ -23,5 +23,15 @@
   "directory": "D:/u/progra/Estructura_de_Datos/github/Grupo-3685/Parcial 1/Proyecto final/build",
   "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE   -g -o CMakeFiles\\ProyectoPrimerParcial.dir\\nodo.cpp.obj -c \"D:\\u\\progra\\Estructura_de_Datos\\github\\Grupo-3685\\Parcial 1\\Proyecto final\\nodo.cpp\"",
   "file": "D:/u/progra/Estructura_de_Datos/github/Grupo-3685/Parcial 1/Proyecto final/nodo.cpp"
+},
+{
+  "directory": "D:/u/progra/Estructura_de_Datos/github/Grupo-3685/Parcial 1/Proyecto final/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE   -g -o CMakeFiles\\ProyectoPrimerParcial.dir\\Archivo.cpp.obj -c \"D:\\u\\progra\\Estructura_de_Datos\\github\\Grupo-3685\\Parcial 1\\Proyecto final\\Archivo.cpp\"",
+  "file": "D:/u/progra/Estructura_de_Datos/github/Grupo-3685/Parcial 1/Proyecto final/Archivo.cpp"
+},
+{
+  "directory": "D:/u/progra/Estructura_de_Datos/github/Grupo-3685/Parcial 1/Proyecto final/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE   -g -o CMakeFiles\\ProyectoPrimerParcial.dir\\Tabla.cpp.obj -c \"D:\\u\\progra\\Estructura_de_Datos\\github\\Grupo-3685\\Parcial 1\\Proyecto final\\Tabla.cpp\"",
+  "file": "D:/u/progra/Estructura_de_Datos/github/Grupo-3685/Parcial 1/Proyecto final/Tabla.cpp"
 }
 ]

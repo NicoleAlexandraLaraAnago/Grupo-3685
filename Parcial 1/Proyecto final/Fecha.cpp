@@ -16,11 +16,11 @@ Fecha::Fecha(int day,int month,int year){
 	this->day=day;
 }
 
-Fecha* Fecha::ingresarFechaNacimiento(){
+Fecha* Fecha::ingresarFecha(){
 	int year2, month2, day2;//fecha nacimiento
 	
 	//ingreso y validacion del anio
-	cout << "Ingresar Anio de nacimiento (xxxx): " << endl;
+	cout << "Ingresar Anio (xxxx): " << endl;
 	cin >> year2;
 	while( year2 < 1900 || year2 > 2021 ){
 		cout << "Dato no valido, volver a ingresar: " << endl;
@@ -29,7 +29,7 @@ Fecha* Fecha::ingresarFechaNacimiento(){
 	}
 
 	//ingreso y validacion del mes
-	cout << "Ingresar Mes de nacimiento (xx): " << endl;
+	cout << "Ingresar Mes (xx): " << endl;
 	cin >> month2;
 	while( month2 < 1 || month2 > 12 ){
 		cout << "Dato no valido, volver a ingresar: " << endl;
@@ -38,7 +38,7 @@ Fecha* Fecha::ingresarFechaNacimiento(){
 	}
 
 	//ingreso y validacion del dia
-	cout << "Ingresar Dia de nacimiento (xx): " << endl;
+	cout << "Ingresar Dia (xx): " << endl;
 	cin >> day2;
 	while( day2 < 1 || day2 > 30 ){
 		cout << "Dato no valido, volver a ingresar: " << endl;

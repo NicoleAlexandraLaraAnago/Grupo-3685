@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+//#include <ctype>
 #define dim 10
 #pragma once
 using namespace std;
@@ -67,4 +68,30 @@ long int validarNumero(string mensaje){
 		}
 	}while(true);
 	return dato;
+}
+
+void ValidarTelefono(){
+       string telf,errores;
+   int i=0;
+    bool digito = true;
+    cout << "telefono" ;
+    cin>>telf;
+    while(telf[i]){
+
+            if(i==4){
+              if(telf[i]!='-')
+              errores += "  el formato debe ser  con  (-) \n\n";
+                    }
+
+             else
+                 if( !isdigit(telf[i] && digito)){
+                  errores += " solo  se acpetan digitos del 0-9 \n\n";
+                  digito = false;
+                    }
+      i++;
+
+    }
+
+            cout <<errores<< endl;
+    return 0;
 }

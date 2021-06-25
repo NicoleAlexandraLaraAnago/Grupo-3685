@@ -1,5 +1,6 @@
-#include <iostream>
 #include "Fecha.h"
+#include "Tabla.h"
+#include <iostream>
 #pragma once
 using namespace std;
 
@@ -14,22 +15,21 @@ class Persona{
         long int telefono;
         float sueldo;
         string correo;
-        string fecha;
+        Tabla *tabla;
 
     public:
-        Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, long int _telefono, float _sueldo, string _correo, string _fecha);
+        Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, long int _telefono, float _sueldo, string _correo,Tabla *_tabla);
         Persona();
         Persona nuevaPersona();
         void generarCorreo(int);
 
         void setNombre(string);
         void setApellido(string);
-        void setCI(long);
+        void setCI(long int);
         void setLocalizacion(string);
         void setTelefono(long);
         void setSueldo(float);
         void setCorreo(string);
-        void setFecha(string);
 
         string getNombre();
         string getApellido();
@@ -38,7 +38,7 @@ class Persona{
         long getTelefono();
         float getSueldo();
         string getCorreo();
-        string getFecha();
         Fecha* getFechaNacimiento();
+        Tabla* getTabla();
 };
 

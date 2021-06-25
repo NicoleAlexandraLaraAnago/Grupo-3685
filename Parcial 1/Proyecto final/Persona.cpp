@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, long int _telefono, float _sueldo, string _correo, string _fecha){
+Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, string _localizacion, long int _telefono, float _sueldo, string _correo,Tabla *_tabla){
     this->nombre = _nombre;
     this->apellido = _apellido;
     this->CI = _CI;
@@ -15,7 +15,7 @@ Persona::Persona(string _nombre, string _apellido, long int _CI, Fecha *_edad, s
     this->telefono = _telefono;
     this->sueldo = _sueldo;
     this->correo = _correo;
-    this->fecha = _fecha;
+    this->tabla = _tabla;
 }
 Persona::Persona(){
     this->nombre = "usuario";
@@ -25,7 +25,6 @@ Persona::Persona(){
     this->telefono = 99999;
     this->sueldo = 99999;
     this->correo = "no definido";
-    this->fecha ="no definido";
 }
 
 Persona Persona::nuevaPersona(){
@@ -40,12 +39,13 @@ Persona Persona::nuevaPersona(){
     cout<<"Numero de cedula: "; cin>>_CI;
     //_CI = validarCedula(_CI);
     cout<<"Fecha de nacimiento.\n";
-    fechaNacimiento = fechaNacimiento->ingresarFechaNacimiento();
+    fechaNacimiento = fechaNacimiento->ingresarFecha();
     cout<<"Digite su lugar de localizacion: "; cin>>_localizacion;
-    cout<<"Numero telefFonico: "; cin>>_telefono;
+    cout<<"Numero telefonico: "; cin>>_telefono;
     cout<<"Digite su sueldo: "; cin>>_sueldo;
     generarCorreo(0);
-    Persona tmp(_nombre,_apellido,_CI,fechaNacimiento,_localizacion,_telefono,_sueldo,correo,"no definido");
+    tabla = tabla->generarTabla();
+    Persona tmp(_nombre,_apellido,_CI,fechaNacimiento,_localizacion,_telefono,_sueldo,correo,tabla);
     return tmp;
 }
 
@@ -72,7 +72,6 @@ void Persona :: setApellido(string _apellido){
 void Persona :: setCI(long _CI){
     CI = _CI;
 }
-
 void Persona :: setLocalizacion(string _localizacion){
     localizacion = _localizacion;
 }
@@ -86,15 +85,13 @@ void Persona :: setCorreo(string _correo){
     correo = _correo;
 }
 
-void Persona :: setFecha(string _fecha){
-   fecha = _fecha;
-}
-
 /*-----------------getters------------------*/
 Fecha* Persona::getFechaNacimiento(){
     return fechaNacimiento;
 }
-
+Tabla* Persona::getTabla(){
+    return tabla;
+}
 string Persona :: getNombre(){
     return nombre;
 }
@@ -115,8 +112,5 @@ float Persona :: getSueldo(){
 }
 string Persona :: getCorreo(){
     return correo;
-}
-string Persona :: getFecha(){
-    return fecha;
 }
 

@@ -16,7 +16,11 @@ Operaciones.h
 ListaDobleEnlazada.cpp 
 ListaDobleEnlazada.h 
 Nodo.cpp 
-Nodo.h)
+Nodo.h
+Archivo.h
+Archivo.cpp
+Tabla.h
+Tabla.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

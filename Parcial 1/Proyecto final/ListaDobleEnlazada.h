@@ -9,6 +9,7 @@ class ListaDobleEnlazada {
         void insertar_inicio(Persona persona);
         void insertar_en(int indice, Persona persona);
         void eliminar(int indice);
+        void guardar();
         void recorrer(std::function<void(Persona, int)> callback);
         int get_tamanio();
 
